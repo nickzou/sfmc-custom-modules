@@ -115,8 +115,8 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/nzou/Documents/SFMC Custom Modules/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/nzou/Documents/SFMC Custom Modules/src/scss/styles.scss */"./src/scss/styles.scss");
+__webpack_require__(/*! /Users/nzou/Documents/sfmc-custom-modules/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/nzou/Documents/sfmc-custom-modules/src/scss/styles.scss */"./src/scss/styles.scss");
 
 
 /***/ })
