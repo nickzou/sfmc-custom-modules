@@ -1,0 +1,99 @@
+.header-container  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $black;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include breakpoint(laptop) {
+        height: 80px;
+    }
+    .header-row, .header-container-inner, .logo-col {
+        height: 100%;
+    }
+    .logo-col {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo {
+        display: inline-block;
+        max-height: 100%;
+        width: 100%;
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    .nav-col {
+        position: relative;
+        @include breakpoint(laptop) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    #hamburger-button {
+        @extend %flex-center;
+        display: inline-flex;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        outline: none;
+        @include breakpoint(laptop) {
+            display: none;
+        }
+    }
+    .main-menu {
+        position: fixed;
+        right: -100vw;
+        top: 60px;
+        background-color: $duck;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        transition: 0.3s ease-in-out;
+        &.is-active {
+            right: 0vw;
+        }
+        @include breakpoint(laptop) {
+            position: relative;
+            right: initial;
+            top: initial;
+            background: none;
+            width: auto;
+            height: 100%;
+        }
+        .menu {
+            list-style: none;
+            padding-inline-start: 0;
+            margin-bottom: 0;
+            @include breakpoint(laptop) {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .menu-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid $light-blue;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            @include breakpoint(laptop) {
+                display: inline-block;
+                border-bottom: none;
+            }
+        }
+        a {
+            color: white;
+            font-size: 14px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
