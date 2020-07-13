@@ -35,6 +35,12 @@
             justify-content: flex-start;
             align-items: center;
         }
+        .button {
+            &:hover {
+                color: $duck;
+                background-color: white;
+            }
+        }
     }
     #hamburger-button {
         @extend %flex-center;

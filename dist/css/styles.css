@@ -5749,6 +5749,11 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.header-container .nav-col .button:hover {
+  color: #06556E;
+  background-color: white;
+}
+
 .header-container #hamburger-button {
   display: inline-flex;
   position: absolute;
