@@ -4691,10 +4691,42 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Graphik', sans-serif;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 .button {
   height: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: inline-flex;
   border-radius: 3px;
   background-color: #06556E;
@@ -5707,6 +5739,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 100;
 }
 
 @media (min-width: 992px) {
@@ -5738,6 +5771,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header-container .nav-col {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media (min-width: 992px) {
@@ -5745,7 +5781,16 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    align-items: center;
+  }
+}
+
+.header-container .nav-col .button {
+  margin-right: 60px;
+}
+
+@media (min-width: 992px) {
+  .header-container .nav-col .button {
+    margin-right: 0;
   }
 }
 
@@ -5833,10 +5878,48 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
 }
 
+.hero-inner .image-wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.hero-inner .hero-image {
+  width: 100%;
+}
+
 a {
   transition: 0.3s ease-in-out;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+.page-wrapper {
+  margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    margin-top: 80px;
+  }
+}
+
+.list-unordered-check li {
+  list-style: none;
+  position: relative;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.list-unordered-check li:before {
+  content: '';
+  background-image: url("https://image.s11.sfmc-content.com/lib/fe3111717164047e7d1075/m/1/808ad059-aca4-40d2-8123-1223bc2f88aa.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  height: 15px;
+  width: 15px;
 }

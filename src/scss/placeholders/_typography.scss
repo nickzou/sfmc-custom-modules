@@ -114,3 +114,26 @@
 %graphik {
     font-family: 'Graphik', sans-serif;
 }
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    @include breakpoint(tablet) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include breakpoint(laptop) {
+        font-size: 65px;
+        line-height: 80px;
+    }
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    @include breakpoint(tablet) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
