@@ -5878,9 +5878,67 @@ p {
   text-transform: uppercase;
 }
 
+.hero-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    height: 700px;
+  }
+  .hero-section > .row {
+    height: 100%;
+  }
+  .hero-section > .row > .col {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    height: 100%;
+  }
+  .hero-inner .title-wrapper {
+    grid-row: 1 / span 1;
+  }
+  .hero-inner .subtitle-wrapper {
+    grid-row: 2 / span 1;
+  }
+  .hero-inner .cta-wrapper {
+    grid-row: 3 / span 1;
+  }
+  .hero-inner .list-wrapper {
+    grid-row: 4 / span 1;
+  }
+}
+
+.hero-inner .cta-wrapper, .hero-inner .image-wrapper {
+  padding-bottom: 20px;
+}
+
 .hero-inner .image-wrapper {
   margin-left: -10px;
   margin-right: -10px;
+}
+
+@media (min-width: 992px) {
+  .hero-inner .image-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    grid-row: 1 / span 4;
+    grid-column: 2 / span 1;
+  }
 }
 
 .hero-inner .hero-image {
@@ -5902,6 +5960,13 @@ a:hover {
 @media (min-width: 992px) {
   .page-wrapper {
     margin-top: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-unordered-check {
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
 
