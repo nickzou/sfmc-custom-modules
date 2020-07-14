@@ -1,0 +1,54 @@
+.about-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    background-color: $duck;
+    @include breakpoint(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(laptop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    h1 {
+        @extend %dolly-pro;
+        font-weight: normal;
+    }
+    .stat {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        @include breakpoint(laptop) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .icon {
+            width: 30px;
+            margin-bottom: 5px;
+            @include breakpoint(laptop) {
+                width: 50px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .number {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+            @include breakpoint(tablet) {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+        .label {
+            font-size: 15px;
+            line-height: 30px;
+            text-transform: uppercase;
+            @include breakpoint(tablet) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+}
