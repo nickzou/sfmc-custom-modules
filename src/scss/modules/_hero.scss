@@ -20,7 +20,7 @@
     @include breakpoint(laptop) {
         display: grid;
         grid-template-columns: 4fr 3fr;
-        grid-template-rows: 3fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
         height:100%;
         .title-wrapper {
             grid-row: 1 / span 1;
