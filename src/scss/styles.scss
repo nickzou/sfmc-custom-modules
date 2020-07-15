@@ -29,6 +29,10 @@ a {
     }
 }
 
+.layout-canvas-g > .section {
+    margin: 0;
+}
+
 .page-wrapper {
     margin-top: 60px;
     @include breakpoint(laptop) {
