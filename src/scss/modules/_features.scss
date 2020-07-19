@@ -1,0 +1,17 @@
+.features-container {
+    background-color: $light-blue;
+    color: $duck;
+    .image-wrapper {
+        position: relative;
+        @include breakpoint(laptop) {
+            height: 620px;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: auto;
+        }
+    }
+}

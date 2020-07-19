@@ -3,10 +3,9 @@
     padding-bottom: 30px;
     @include breakpoint(tablet) {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
     }
     @include breakpoint(laptop) {
-        height: 700px;
         &>.row {
             height: 100%;
             &>.col {

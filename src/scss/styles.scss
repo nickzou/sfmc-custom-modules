@@ -16,7 +16,9 @@
 
 @import 'modules/header';
 @import 'modules/hero';
+@import 'modules/form';
 @import 'modules/about';
+@import 'modules/features';
 
 * {
     @extend %graphik;
@@ -40,9 +42,16 @@ a {
     }
 }
 
+.section-title {
+    @extend %dolly-pro;
+    font-weight: normal;
+}
+
 .list-unordered-check {
+    padding-inline-start: 20px;
     @include breakpoint(tablet) {
         column-count: 2;
+        column-gap: 25px;
     }
     li {
         list-style: none;
@@ -60,5 +69,18 @@ a {
             height: 15px;
             width: 15px;
         }
+    }
+}
+
+.general-section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include breakpoint(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include breakpoint(laptop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
