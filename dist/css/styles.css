@@ -6067,6 +6067,15 @@ p {
 
 .features-container .image-wrapper {
   position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media (min-width: 768px) {
+  .features-container .image-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -6075,12 +6084,25 @@ p {
   }
 }
 
-.features-container .image-wrapper img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: auto;
+.features-container .image-wrapper .features-image {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .features-container .image-wrapper .features-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .features-container .list-unordered-check {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
 
 a {
@@ -6128,6 +6150,7 @@ a:hover {
   position: relative;
   font-size: 14px;
   line-height: 25px;
+  margin-bottom: 15px;
 }
 
 .list-unordered-check li:before {

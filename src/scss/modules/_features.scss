@@ -3,15 +3,29 @@
     color: $duck;
     .image-wrapper {
         position: relative;
+        margin-left:-10px;
+        margin-right: -10px;
+        @include breakpoint(tablet) {
+            margin-left: 0;
+            margin-right: 0;
+        }
         @include breakpoint(laptop) {
             height: 620px;
         }
-        img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: auto;
+        .features-image {
+            width: 100%;
+            @include breakpoint(laptop) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    .list-unordered-check {
+        @include breakpoint(laptop) {
+            column-count: 1;
         }
     }
 }
