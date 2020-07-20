@@ -1,0 +1,22 @@
+.venue-types-container {
+    background-color: $teal;
+    color: white;
+    .image-wrapper {
+        margin-left: -10px;
+        margin-right: -10px;
+        @include breakpoint(laptop) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: auto;
+        }
+    }
+    .venue-types-image {
+        width: 100%;
+        @include breakpoint(laptop) {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
