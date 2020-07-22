@@ -18,6 +18,7 @@ const scroll = new SmoothScroll('a[href*="#"]');
 Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper('.swiper-container', {
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
       },
