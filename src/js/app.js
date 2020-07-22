@@ -1,5 +1,6 @@
 import mQ from './functions/mediaQueries';
 import SmoothScroll from 'smooth-scroll';
+import Swiper, {Navigation, Pagination} from 'swiper';
 
 const hamburgerButton = document.getElementById('hamburger-button');
 const mainMenu = document.getElementById('main-menu');
@@ -13,3 +14,17 @@ hamburgerButton.addEventListener('click', function () {
 });
 
 const scroll = new SmoothScroll('a[href*="#"]');
+
+Swiper.use([Navigation, Pagination]);
+
+const swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+});

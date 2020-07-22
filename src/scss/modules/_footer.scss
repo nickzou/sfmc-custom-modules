@@ -1,0 +1,32 @@
+.footer-container {
+    .footer-main-row {
+        background-color: $dark-duck;
+        background-image: url('https://image.s11.sfmc-content.com/lib/fe3111717164047e7d1075/m/1/c7436bb9-282a-4d96-bfcd-01fed5f62d92.png');
+        background-position: 100% 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    h3 {
+        margin-bottom: 1rem;
+    }
+    .footer-text-col {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include breakpoint(laptop) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    .copyright-row {
+        background: $dark-grey;
+        color: white;
+        font-size: 15px;
+        line-height: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include breakpoint(laptop) {
+            font-size: 18px;
+        }
+    }
+}

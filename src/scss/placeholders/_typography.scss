@@ -133,6 +133,20 @@ h1 {
     }
 }
 
+h3 {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 600;
+    @include breakpoint(tablet) {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    @include breakpoint(laptop) {
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+
 p {
     font-size: 14px;
     line-height: 20px;

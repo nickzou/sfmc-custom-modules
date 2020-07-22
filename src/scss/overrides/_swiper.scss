@@ -1,0 +1,45 @@
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+    --swiper-navigation-color: #{$duck};
+    @include breakpoint(tablet) {
+        display: flex;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-pagination-color: #{$duck};
+}
+
+.swiper-slide {
+    .slider-inner {
+        text-align: center;
+        @extend %flex-center;
+        flex-direction: column;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 65px;
+        @include breakpoint(tablet) {
+            margin-left: 65px;
+            margin-right: 65px;
+        }
+    }
+    .logo-wrapper {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .attribution {
+
+    }
+}

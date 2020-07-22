@@ -14,12 +14,17 @@
 @import 'overrides/hamburgers';
 @import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
+//Swiper
+@import '~swiper/swiper-bundle.css';
+@import 'overrides/swiper';
+
 @import 'modules/header';
 @import 'modules/hero';
 @import 'modules/form';
 @import 'modules/about';
 @import 'modules/features';
 @import 'modules/venue_types';
+@import 'modules/footer';
 
 * {
     @extend %graphik;
